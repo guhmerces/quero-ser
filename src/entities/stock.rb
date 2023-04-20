@@ -1,6 +1,8 @@
 #todo : make code decoupled relating to the distribution center name
 module Entities
     class Stock
+        include ::Stock::UpdateStock
+
         attr_reader :products, :transfer_min
     
         def initialize(products)
