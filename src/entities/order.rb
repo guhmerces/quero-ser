@@ -2,7 +2,7 @@ module Entities
     class Order
         attr_reader :product, :amount, :status, :sales_channel
     
-        def initialize(products, amount, status, sales_channel)
+        def initialize(product, amount, status, sales_channel)
             @product = product
             @amount = amount
             @status = status
