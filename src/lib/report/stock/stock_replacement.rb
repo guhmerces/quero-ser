@@ -44,7 +44,8 @@ module Report
                         "Necess" => data[:replacement_amount],
                         "TransfDeArmpCO" => data[:transfer_qty],
                     }
-                end
+                end  
+                { ok: true, value: temp }
             end
         end
     end
