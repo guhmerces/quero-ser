@@ -7,8 +7,8 @@ module Entities
             @products = products
             @transfer_min = 10
         end
-    
-        def self.call(products)
+ 
+        def self.call(products = [])
             new(products)
         end
 
